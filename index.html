@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: opis stranice za tražilice -->
+    <meta name="description" content="Baza filmova - pregledajte popis filmova, najnovije trejlere i informacije o omiljenim naslovima. Ocjene, žanrovi i godina izdanja.">
+    
+    <!-- SEO: ključne riječi vezane uz filmove -->
+    <meta name="keywords" content="filmovi, baza filmova, kino, trejleri, najbolji filmovi, ocjene filmova, filmska baza">
+    
+    <!-- SEO: autor stranice -->
+    <meta name="author" content="Web Programiranje">
+    
+    <!-- SEO: robots - indeksiraj i prati linkove -->
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Baza Filmova | Popis i Trejleri</title>
+</head>
+<body>
+    <header>
+        <h1>🎬 Baza Filmova</h1>
+        <p>Vaš vodič kroz svijet filma - popis filmova, ocjene i najnoviji trejleri</p>
+    </header>
+
+    <nav aria-label="Primarna navigacija">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="pages/grafikon.html">Graphs</a></li>
+			<li><a href="pages/slike.html">Images</a></li>
+            
+            <!-- Padajući izbornik -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Filmovi ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Svi filmovi</a></li>
+                    <li><a href="#">Akcija</a></li>
+                    <li><a href="#">Komedija</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Horor</a></li>
+                    <li><a href="#">Animacija</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Sekcija s popisom filmova -->
+        <section aria-labelledby="filmovi">
+            <h2 id="filmovi">📽️ Popis Filmova</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Tablica filmova s osnovnim podacima</caption>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Naslov</th>
+                            <th>Godina</th>
+                            <th>Žanr</th>
+                            <th>Trajanje</th>
+                            <th>Država</th>
+                            <th>Ocjena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2</td><td>Bugs Bunny's Third Movie</td><td>1982</td><td>Animacija</td><td>76</td><td>SAD</td><td>7.7</td></tr>
+                        <tr><td>3</td><td>18 anni tra una settimana</td><td>1991</td><td>Drama</td><td>98</td><td>Italija</td><td>6.5</td></tr>
+                        <tr><td>17</td><td>Ride a Wild Pony</td><td>1976</td><td>Romantični</td><td>91</td><td>SAD</td><td>5.7</td></tr>
+                        <tr><td>18</td><td>Diner</td><td>1982</td><td>Komedija</td><td>95</td><td>SAD</td><td>7.0</td></tr>
+                        <tr><td>20</td><td>A che servono questi quattrini?</td><td>1942</td><td>Komedija</td><td>85</td><td>Italija</td><td>5.9</td></tr>
+                        <tr><td>22</td><td>A ciascuno il suo</td><td>1967</td><td>Drama</td><td>93</td><td>Italija</td><td>7.6</td></tr>
+                        <tr><td>23</td><td>Dead-Bang</td><td>1989</td><td>Krimić</td><td>109</td><td>SAD</td><td>6.0</td></tr>
+                        <tr><td>24</td><td>A... come assassino</td><td>1966</td><td>Triler</td><td>80</td><td>Italija</td><td>5.2</td></tr>
+                        <tr><td>26</td><td>At Close Range</td><td>1986</td><td>Drama</td><td>115</td><td>SAD</td><td>7.5</td></tr>
+                        <tr><td>30</td><td>A Ghentar si muore facile</td><td>1968</td><td>Avantura</td><td>101</td><td>Italija</td><td>4.8</td></tr>
+                        <tr><td>32</td><td>Sleeping with the Enemy</td><td>1990</td><td>Drama</td><td>96</td><td>SAD</td><td>5.0</td></tr>
+                        <tr><td>34</td><td>In Bed With Madonna</td><td>1990</td><td>Dokumentarni</td><td>111</td><td>SAD</td><td>5.3</td></tr>
+                        <tr><td>36</td><td>Bowery at Midnight</td><td>1942</td><td>Horor</td><td>62</td><td>SAD</td><td>5.1</td></tr>
+                        <tr><td>37</td><td>A mezzanotte va la ronda del piacere</td><td>1975</td><td>Komedija</td><td>100</td><td>Italija</td><td>5.8</td></tr>
+                        <tr><td>38</td><td>Mr. Majestyk</td><td>1974</td><td>Akcija</td><td>105</td><td>SAD</td><td>6.2</td></tr>
+                        <tr><td>45</td><td>Warning Sign</td><td>1985</td><td>Akcija</td><td>99</td><td>SAD</td><td>4.8</td></tr>
+                        <tr><td>47</td><td>About Last Night</td><td>1986</td><td>Komedija</td><td>113</td><td>SAD</td><td>5.9</td></tr>
+                        <tr><td>49</td><td>Fail-Safe</td><td>1964</td><td>Drama</td><td>110</td><td>SAD</td><td>8.2</td></tr>
+                        <tr><td>51</td><td>Some Like It Hot</td><td>1959</td><td>Komedija</td><td>120</td><td>SAD</td><td>9.1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Glavna sekcija s opisom baze filmova -->
+        <section aria-labelledby="glavna-sekcija">
+            <h2 id="glavna-sekcija">🎞️ O našoj bazi filmova</h2>
+            <p>Naša baza filmova sadrži podatke o različitim filmskim naslovima iz cijelog svijeta. Svaki film donosi podatke o godini izdanja, žanru, trajanju, državi porijekla i ocjeni.</p>
+            <p>Baza se kontinuirano ažurira novim naslovima. Cilj nam je pružiti korisnicima što potpuniju informaciju o filmovima koje žele pogledati.</p>
+        </section>
+
+        <!-- Article s novostima iz svijeta filma -->
+        <article aria-labelledby="vijesti">
+            <h2 id="vijesti">📰 Novosti iz svijeta filma</h2>
+            <p><strong>Novi filmovi u kinima:</strong> Ovaj tjedan u kina stižu dva nova hita - akcijski spektakl "Noćna misija" i romantična komedija "Ljubav na prvi klik".</p>
+            <p><strong>Filmski festival:</strong> 15. izdanje Festivala kratkog filma počinje sljedeći tjedan. U programu više od 50 filmova iz 20 zemalja.</p>
+            <p><strong>Top lista:</strong> Ovotjedni izbor najboljih filmova prema ocjenama publike vodi kultni komad "Some Like It Hot" s ocjenom 9.1.</p>
+        </article>
+
+        <!-- Aside s filmom tjedna -->
+        <aside aria-label="Film tjedna">
+            <h3>🎬 Film tjedna</h3>
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="250" 
+                    src="https://www.youtube.com/embed/YE7VzlLtp-4" 
+                    title="Big Buck Bunny - kratki animirani film" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p><strong>🎥 Big Buck Bunny</strong> - kratki animirani film o ljubaznom zecu koji se suočava s tri mala stvorenja.</p>
+            <p>Trajanje: 10 minuta | Žanr: Animacija, Komedija</p>
+            <p><a href="#">Više o filmu →</a></p>
+        </aside>
+        <!-- Aside s fotografijama koje se mijenjaju ovisno o veličini ekrana -->
+        <aside aria-label="Galerija filmova">
+            <h3>🎬 Filmske fotografije</h3>
+    
+            <figure class="film-figure">
+                <div class="film-image-container" 
+                    role="img" 
+                    aria-label="Filmska kamera i oprema"
+                    aria-describedby="image-description"></div>
+                <figcaption id="image-description">
+                    Filmska industrija - kamera na setu
+                </figcaption>
+            </figure>
+            
+            <p><strong>🎥 Filmska čarolija</strong> - Fotografija prikazuje filmsku opremu i atmosferu na setu.</p>
+            <p><em>Prelazak mišem preko fotografije mijenja prozirnost i dodaje efekt zumiranja.</em></p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Baza Filmova. Sva prava pridržana.</p>
+        <p>Kontakt: info@bazafilmova.hr | Tel: +385 1 123 4567</p>
+        <p><a href="#">O nama</a> | <a href="#">Uvjeti korištenja</a> | <a href="#">Kontakt</a></p>
+    </footer>
+</body>
+</html>
