@@ -7,6 +7,21 @@ body {
     text-align: center;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* gura footer na dno */
+}
+
 /* Header i navigacija */
 header {
     background: #222;
